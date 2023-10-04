@@ -82,7 +82,7 @@ window.CONFIG = {
       },
       bgColor: {
         type: "solid",
-        color: "#191717",
+        color: "#010100",
       },
       textColor: "#fff",
       pinned: true,
