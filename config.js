@@ -74,7 +74,7 @@ window.CONFIG = {
       commands: {
         go: {
           template: "{@}/r/{$}",
-          description: "go to subreddit",
+          description: "Go to scaler",
         },
         search: {
           template: "{@}/search?q={$}",
@@ -106,6 +106,66 @@ window.CONFIG = {
         color: "#000",
       },
       textColor: "#da0813",
+      pinned: true,
+    },
+
+    {
+      category: "Education",
+      name: "InterviewBit",
+      icon: "interviewbit",
+      key: "KeyI",
+      triggers: ["i", "int", "ib"],
+      url: "https://www.interviewbit.com/online-java-compiler/",
+      normalisedURL: "interviewbit.com",
+      commands: {
+        search: {
+          template: "{@}/search/results/all/?keywords={$}",
+        },
+      },
+      bgColor: {
+        type: "gradient",
+        gradientType: "radial",
+        colors: ["#1A120B", "#2C3333"],
+        stops: [40, 100],
+      },
+      textColor: "#fff",
+      pinned: true,
+    },
+
+    {
+      category: "Programming",
+      name: "PythonTutor",
+      icon: "pythontutor",
+      url: "https://pythontutor.com/java.html#mode=edit",
+      normalisedURL: "pythontutor.com",
+      triggers: ["p", "py", "python"],
+      key: "KeyP",
+      bgColor: {
+        type: "solid",
+        // color: "#413F42",
+        // color: "#70a597",
+        color: "#526D82",
+
+
+      },
+      textColor: "#f7f7f7",
+      pinned: true,
+    },
+
+    {
+      category: "Programming",
+      name: "ChatGPT",
+      icon: "chatGPT",
+      url: "https://chat.openai.com/chat",
+      normalisedURL: "openai.com",
+      triggers: ["c", "chat", "gpt", "cgpt", "chatgpt"],
+      key: "KeyC",
+      bgColor: {
+        type: "solid",
+        color: "#181823",
+        // color: "#70a597",
+      },
+      textColor: "#f7f7f7",
       pinned: true,
     },
 
@@ -155,113 +215,12 @@ window.CONFIG = {
 
     {
       category: "Programming",
-      name: "ChatGPT",
-      icon: "chatGPT",
-      url: "https://chat.openai.com/chat",
-      normalisedURL: "openai.com",
-      triggers: ["c", "chat", "gpt", "cgpt", "chatgpt"],
-      key: "KeyC",
-      bgColor: {
-        type: "solid",
-        color: "#70a597",
-      },
-      textColor: "#f7f7f7",
-      pinned: true,
-    },
-    {
-      category: "Education",
-      name: "FreeCodeCamp",
-      icon: "freecodecamp",
-      url: "https://www.freecodecamp.org/",
-      normalisedURL: "freecodecamp.org",
-      triggers: ["f", "fcc", "code"],
-      key: "KeyF",
-      commands: {
-        go: {
-          template: "{@}/{$}",
-        },
-      },
-      bgColor: {
-        type: "gradient",
-        gradientType: "radial",
-        colors: ["#29aaed", "#25a4e2"],
-        stops: [40, 100],
-      },
-      textColor: "#fff",
-      pinned: true,
-    },
-    {
-      category: "Other",
-      name: "Translate",
-      icon: "translate",
-      url: "https://translate.google.com",
-      normalisedURL: "translate.google.com",
-      triggers: ["t", "translate"],
-      key: "KeyT",
-      commands: {
-        search: {
-          template: "{@}/?text={$}",
-          description: "translate text",
-        },
-      },
-      bgColor: {
-        type: "gradient",
-        gradientType: "linear",
-        angle: 45,
-        colors: ["#508bed", "#4654b4"],
-      },
-      textColor: "#fff",
-      pinned: true,
-    },
-    {
-      category: "Social",
-      name: "Instagram",
-      triggers: ["i", "ig", "insta", "instagram"],
-      key: "KeyI",
-      icon: "instagram",
-      url: "https://instagram.com",
-      normalisedURL: "instagram.com",
-      commands: {
-        go: {
-          template: "{@}/{$}",
-          description: "go to user",
-        },
-      },
-      bgColor: {
-        type: "gradient",
-        gradientType: "radial",
-        angle: "circle at 30% 107%",
-        colors: ["#fdf497", "#fdf497", "#fd5949", "#d6249f", "#285aeb"],
-        stops: [0, 5, 45, 60, 90],
-      },
-      textColor: "#e8e8e8",
-      pinned: true,
-    },
-    {
-      category: "Communication",
-      name: "WhatsApp",
-      icon: "whatsApp",
-      url: "https://web.whatsapp.com",
-      normalisedURL: "whatsapp.com",
-      triggers: ["w", "wa", "wapp", "wahtsapp"],
-      key: "KeyW",
-      bgColor: {
-        type: "gradient",
-        gradientType: "linear",
-        angle: 45,
-        colors: ["#26d347", "#58f879"],
-      },
-      textColor: "#fff",
-      pinned: true,
-    },
-    {
-      category: "Programming",
       name: "StackOverflow",
       icon: "stackoverflow",
       url: "https://stackoverflow.com",
       normalisedURL: "stackoverflow.com",
       triggers: ["s", "st", "so", "stack", "stackoverflow"],
-      // key: "KeyS",
+      key: "KeyO",
       commands: {
         search: {
           template: "{@}/search?q={$}",
@@ -280,6 +239,43 @@ window.CONFIG = {
       textColor: "#212121",
       pinned: true,
     },
+
+    {
+      category: "Communication",
+      name: "WhatsApp",
+      icon: "whatsApp",
+      url: "https://web.whatsapp.com",
+      normalisedURL: "whatsapp.com",
+      triggers: ["w", "wa", "wapp", "wahtsapp"],
+      key: "KeyW",
+      bgColor: {
+        type: "gradient",
+        gradientType: "linear",
+        angle: 45,
+        colors: ["#26d347", "#58f879"],
+      },
+      textColor: "#fff",
+      pinned: true,
+    },
+
+    {
+      category: "Work",
+      name: "Slack",
+      icon: "slack",
+      triggers: ["sl", "slack"],
+      url: "https://app.slack.com",
+      normalisedURL: "slack.com",
+      bgColor: {
+        type: "solid",
+        color: "#264348",
+        // gradientType: "linear",
+        // angle: -200,
+        // colors: ["#555555", "#e6d7b8", "#bce2eb", "#8db0a4"],
+      },
+      textColor: "#00bd6d",
+      pinned: true,
+    },
+
     {
       category: "Social",
       name: "Twitter",
@@ -325,21 +321,29 @@ window.CONFIG = {
       pinned: true,
     },
 
+
     {
-      category: "Work",
-      name: "Slack",
-      icon: "slack",
-      triggers: ["sl", "slack"],
-      url: "https://app.slack.com",
-      normalisedURL: "slack.com",
-      bgColor: {
-        type: "solid",
-        color: "#264348",
-        // gradientType: "linear",
-        // angle: -200,
-        // colors: ["#555555", "#e6d7b8", "#bce2eb", "#8db0a4"],
+      category: "Social",
+      name: "Instagram",
+      triggers: ["i", "ig", "insta", "instagram"],
+      // key: "KeyI",
+      icon: "instagram",
+      url: "https://instagram.com",
+      normalisedURL: "instagram.com",
+      commands: {
+        go: {
+          template: "{@}/{$}",
+          description: "go to user",
+        },
       },
-      textColor: "#00bd6d",
+      bgColor: {
+        type: "gradient",
+        gradientType: "radial",
+        angle: "circle at 30% 107%",
+        colors: ["#fdf497", "#fdf497", "#fd5949", "#d6249f", "#285aeb"],
+        stops: [0, 5, 45, 60, 90],
+      },
+      textColor: "#e8e8e8",
       pinned: true,
     },
     {
@@ -400,6 +404,52 @@ window.CONFIG = {
     },
 
     //! Unpinned (extras)
+    {
+      category: "Education",
+      name: "FreeCodeCamp",
+      icon: "freecodecamp",
+      url: "https://www.freecodecamp.org/",
+      normalisedURL: "freecodecamp.org",
+      triggers: ["f", "fcc", "code"],
+      key: "KeyF",
+      commands: {
+        go: {
+          template: "{@}/{$}",
+        },
+      },
+      bgColor: {
+        type: "gradient",
+        gradientType: "radial",
+        colors: ["#29aaed", "#25a4e2"],
+        stops: [40, 100],
+      },
+      textColor: "#fff",
+      pinned: false,
+    },
+
+    {
+      category: "Other",
+      name: "Translate",
+      icon: "translate",
+      url: "https://translate.google.com",
+      normalisedURL: "translate.google.com",
+      triggers: ["t", "translate"],
+      key: "KeyT",
+      commands: {
+        search: {
+          template: "{@}/?text={$}",
+          description: "translate text",
+        },
+      },
+      bgColor: {
+        type: "gradient",
+        gradientType: "linear",
+        angle: 45,
+        colors: ["#508bed", "#4654b4"],
+      },
+      textColor: "#fff",
+      pinned: false,
+    },
     {
       category: "Music",
       name: "spotify",
