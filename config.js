@@ -346,6 +346,32 @@ window.CONFIG = {
       textColor: "#e8e8e8",
       pinned: true,
     },
+
+
+    {
+      category: "Other",
+      name: "Translate",
+      icon: "translate",
+      url: "https://translate.google.com",
+      normalisedURL: "translate.google.com",
+      triggers: ["t", "translate"],
+      // key: "KeyT",
+      commands: {
+        search: {
+          template: "{@}/?text={$}",
+          description: "translate text",
+        },
+      },
+      bgColor: {
+        type: "gradient",
+        gradientType: "linear",
+        colors: ["#e1e1e3", "#bbb"],
+        stops: [60, 100],
+      },
+      textColor: "#000",
+      pinned: true,
+    },
+    
     {
       category: "Work",
       name: "Google Drive",
@@ -356,8 +382,8 @@ window.CONFIG = {
       bgColor: {
         type: "gradient",
         gradientType: "linear",
-        colors: ["#f29100", "#fff"],
-        stops: [0, 80],
+        colors: ["#e1e1e3", "#bbb"],
+        stops: [60, 100],
       },
       textColor: "#000",
       pinned: true,
@@ -367,13 +393,13 @@ window.CONFIG = {
       name: "Amazon",
       triggers: ["a", "am", "amz", "amazon"],
       icon: "amazon",
-      url: "https://www.amazon.com/",
-      normalisedURL: "amazon.com",
+      url: "https://www.amazon.in/",
+      normalisedURL: "amazon.in",
       bgColor: {
         type: "gradient",
         gradientType: "linear",
-        colors: ["#f29100", "#fff"],
-        stops: [0, 80],
+        colors: ["#e1e1e3", "#bbb"],
+        stops: [60, 100],
       },
       textColor: "#000",
       pinned: true,
@@ -427,29 +453,6 @@ window.CONFIG = {
       pinned: false,
     },
 
-    {
-      category: "Other",
-      name: "Translate",
-      icon: "translate",
-      url: "https://translate.google.com",
-      normalisedURL: "translate.google.com",
-      triggers: ["t", "translate"],
-      key: "KeyT",
-      commands: {
-        search: {
-          template: "{@}/?text={$}",
-          description: "translate text",
-        },
-      },
-      bgColor: {
-        type: "gradient",
-        gradientType: "linear",
-        angle: 45,
-        colors: ["#508bed", "#4654b4"],
-      },
-      textColor: "#fff",
-      pinned: false,
-    },
     {
       category: "Music",
       name: "spotify",
