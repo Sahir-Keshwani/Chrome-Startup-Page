@@ -162,7 +162,7 @@ window.CONFIG = {
       key: "KeyC",
       bgColor: {
         type: "solid",
-        color: "#181823",
+        color: "#000000",
         // color: "#70a597",
       },
       textColor: "#f7f7f7",
