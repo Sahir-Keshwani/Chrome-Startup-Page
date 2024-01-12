@@ -141,8 +141,10 @@ window.CONFIG = {
       triggers: ["l", "py", "python"],
       key: "KeyL",
       bgColor: {
-        type: "solid",
-        color: "#28282B",
+        type: "gradient",
+        gradientType: "radial",
+        colors: ["#232D3F", "#191919"],
+        stops: [40, 80],
       },
       textColor: "#f7f7f7",
       pinned: true,
