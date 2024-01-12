@@ -58,7 +58,7 @@ window.CONFIG = {
       normalisedURL: "notion.so",
       bgColor: {
         type: "solid",
-        color: "#536878",
+        color: "#141010",
       },
       textColor: "#fff",
       pinned: true,
@@ -126,27 +126,23 @@ window.CONFIG = {
         type: "gradient",
         gradientType: "radial",
         colors: ["#1A120B", "#2C3333"],
-        stops: [40, 100],
+        stops: [40, 80],
       },
       textColor: "#fff",
       pinned: true,
     },
 
     {
-      category: "Programming",
-      name: "PythonTutor",
-      icon: "pythontutor",
-      url: "https://pythontutor.com/java.html#mode=edit",
+      category: "Coding Problems",
+      name: "LeetCode",
+      icon: "leetcode",
+      url: "https://leetcode.com/",
       normalisedURL: "pythontutor.com",
-      triggers: ["p", "py", "python"],
-      key: "KeyP",
+      triggers: ["l", "py", "python"],
+      key: "KeyL",
       bgColor: {
         type: "solid",
-        // color: "#413F42",
-        // color: "#70a597",
-        color: "#526D82",
-
-
+        color: "#28282B",
       },
       textColor: "#f7f7f7",
       pinned: true,
@@ -163,7 +159,6 @@ window.CONFIG = {
       bgColor: {
         type: "solid",
         color: "#000000",
-        // color: "#70a597",
       },
       textColor: "#f7f7f7",
       pinned: true,
@@ -371,7 +366,7 @@ window.CONFIG = {
       textColor: "#000",
       pinned: true,
     },
-    
+
     {
       category: "Work",
       name: "Google Drive",
